@@ -1,0 +1,27 @@
+{
+  "name": "clima-challenge",
+  "version": "1.0.0",
+  "description": "Challenge aplicacion backend de clima",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AG350/clima-challenge.git"
+  },
+  "author": "Alejandro Galeano <ale.gb32@gmail.com> (https://github.com/AG350)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AG350/clima-challenge/issues"
+  },
+  "homepage": "https://github.com/AG350/clima-challenge#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
