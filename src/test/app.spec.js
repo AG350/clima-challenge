@@ -15,7 +15,7 @@ describe('GET /v1/location',() => {
     it('Should recive the client IP and respond with a 200 status code and json body', async () => {
         const response = await request.get('/v1/location')
                                 .set('Accept','application/json')
-                                .set('X-Forwarded-For','200.127.228.20')
+                                .set('x-forwarded-for','200.127.228.20')
                                 .expect('Content-Type', /json/);
         
         expect(response.status).toBe(200);
@@ -33,7 +33,7 @@ describe('GET /v1/current',() => {
     it('Should recive the client IP and respond with a 200 status code and json body', async () => {
         const response = await request.get('/v1/current')
                                 .set('Accept','application/json')
-                                .set('X-Forwarded-For','200.127.228.20')
+                                .set('x-forwarded-for','200.127.228.20')
                                 .expect('Content-Type', /json/);
         
         expect(response.status).toBe(200);
@@ -68,7 +68,7 @@ describe('GET /v1/forecast',() => {
     it('Should recive the client IP and respond with a 200 status code and json body', async () => {
         const response = await request.get('/v1/forecast')
                                 .set('Accept','application/json')
-                                .set('X-Forwarded-For','200.127.228.20')
+                                .set('x-forwarded-for','200.127.228.20')
                                 .expect('Content-Type', /json/);
         
         expect(response.status).toBe(200);

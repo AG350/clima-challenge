@@ -4,7 +4,7 @@ module.exports = {
     getCurrentWeather: async (req, res) =>{
         let cityName = req.params.city;
         if(!cityName){
-            let ip = req.header('X-Forwarded-For') || req.socket.remoteAddress;
+            let ip = req.header('x-forwarded-for') || req.socket.remoteAddress;
             let cityIp = await service.getLocationService(ip);
             cityName = cityIp.city
         }
@@ -33,7 +33,7 @@ module.exports = {
     getForecast : async (req, res) => {
         let cityName = req.params.city;
         if(!cityName){
-            let ip = req.header('X-Forwarded-For') || req.socket.remoteAddress;
+            let ip = req.header('x-forwarded-for') || req.socket.remoteAddress;
             let cityIp = await service.getLocationService(ip);
             cityName = cityIp.city
         }
