@@ -2,6 +2,8 @@
 ## Descripcion
 
 Aplicación backend de consulta de clima que pueda visualizar el clima actual y pronostico de los próximos 5 días para la ciudad actual segun ip y de otras 5 ciudades seleccionables. Se consumen los servicios de dos api's externas, Open Weather Map, para informacion climatica, y IP-API para datos de localizacion por IP.
+
+
 ## Construido con
 
 * [Express](https://expressjs.com/)
@@ -82,3 +84,11 @@ el edpoint admite un parametro opcional que utiliza para identificar una localiz
 ## Importante
 
 Para realizar pruebas en un servidor local, debe agregar de forma manual a la cabecera de la peticion la key x-forwarded-for con alguna ip valida, ya que express toma el valor del localhost.
+
+## Demo
+
+Esta aplicacion fue desplegada en un servidor AWS para desmostraciones, la direccion a la que puede dirigirse es:
+
+http://weather-env-1.eba-djpuix3m.sa-east-1.elasticbeanstalk.com/
+
+Recuerde dirigirse a los endponits habilitados para obtener una respuesta util, de lo contrario recibira un status 404.
