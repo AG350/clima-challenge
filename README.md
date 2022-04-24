@@ -81,4 +81,4 @@ el edpoint admite un parametro opcional que utiliza para identificar una localiz
 
 ## Importante
 
-Para realizar pruebas en un servidor local, debe agregar de forma manual a la cabecera de la peticion la key x-forwarded-for con alguna ip valida, ya que express toma el valor del localhost.
+Para realizar pruebas en un servidor local, debe agregar de forma manual a la cabecera de la peticion la key X-Forwarded-For con alguna ip valida, ya que express toma el valor del localhost.
