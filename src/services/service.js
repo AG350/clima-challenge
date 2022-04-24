@@ -13,7 +13,6 @@ const lang = config.languageApi
 
 const getLocationService = async (ip) => {
     const response = await baseHTTP.get(baseUrlIpApi,ip);
-    console.log(response);
     return response.data;
 }
 

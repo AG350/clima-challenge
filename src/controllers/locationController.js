@@ -2,8 +2,7 @@ const service = require('../services/service');
 
 module.exports = {
     getLocationByIp : async (req, res) => {
-        let ip = req.header('x-forwarded-for') || req.socket.remoteAddress;
-        console.log('location ip : '+ip)
+        let ip = req.ip;
         try {
             city = await service.getLocationService(ip);
             if(city.status === 'fail') {
