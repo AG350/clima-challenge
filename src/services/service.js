@@ -13,8 +13,8 @@ const lang = config.languageApi
 
 const getLocationService = async (ip) => {
     const response = await baseHTTP.get(baseUrlIpApi,ip);
-    return response.data;
     console.log(response);
+    return response.data;
 }
 
 const getWeatherInfo = async (endpoint, city) => {
