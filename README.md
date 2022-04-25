@@ -78,7 +78,7 @@ El edpoint admite un parametro opcional que utiliza para identificar una localiz
 
 Este edpoint requiere los datos de cabecera de la peticion, para obtener la direccion IP de la misma, a tra vez de la cual obtiene la localizacion, y la ultiza para responder con el pronostico extendido  a 5 días de la ubicacion.
 
-* #### host/v1/forecast/[:city]
+* #### /v1/forecast/[:city]
 
 El edpoint admite un parametro opcional que utiliza para identificar una localizacion y con ella devuelve un json con el nombre de la ciudad y el pronostico extendido a 5 dias. Si el parametro ingresado no coincide con ninguna ciudad de la base de datos, este respondera con un valor de status 404 y el mensaje de "City not found".
 
