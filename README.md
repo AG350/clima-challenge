@@ -90,6 +90,6 @@ Para realizar pruebas en un servidor local, debe agregar de forma manual a la ca
 
 Esta aplicacion fue desplegada en un servidor AWS para desmostraciones, la direccion a la que puede dirigirse es:
 
-http://weather-env-1.eba-djpuix3m.sa-east-1.elasticbeanstalk.com/
+http://weather-env-1.eba-djpuix3m.sa-east-1.elasticbeanstalk.com/v1/location
 
 Recuerde dirigirse a los endponits habilitados para obtener una respuesta util, de lo contrario recibira un status 404.
