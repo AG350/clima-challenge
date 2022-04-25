@@ -1,7 +1,7 @@
 # Weather and forecast
 ## Descripcion
 
-Aplicación backend de consulta de clima que pueda visualizar el clima actual y pronostico de los próximos 5 días para la ciudad actual segun ip y de otras 5 ciudades seleccionables. Se consumen los servicios de dos api's externas, Open Weather Map, para informacion climatica, y IP-API para datos de localizacion por IP.
+Aplicación backend de consulta de clima que pueda visualizar el clima actual y pronostico de los próximos 5 días para la ciudad actual segun ip y de otras ciudades seleccionables. Se consumen los servicios de dos api's externas, Open Weather Map, para informacion climatica, y IP-API para datos de localizacion por IP.
 
 
 ## Construido con
@@ -36,7 +36,8 @@ En la raiz del repositorio puede encontrar un ejemplo de archivo, a continuacion
     - URL_API_WEATHER: Url base de la aplicacion de clima
     - URL_API_IP: Url base de la aplicacion de localizacion por ip
 
-Completado lo previamente mensionado puede untilizar los siguientes scrips para  la opcion que desee
+Completado lo previamente mencionado, puede utilizar los siguientes scripts para  la opcion que desee, 
+y la aplicacion se encontrara corriendo en el localhost:[PUERTO DEFINIDO EN EL ARCHIVO .env]
 
 - start             -> para desplegar la aplicacion
 - dev               -> para monitorear en modo de desarrollo
@@ -67,11 +68,11 @@ Utiliza los datos de cabecera de peticion para obtener la direccion IP del clien
     
 * #### /v1/current
 
-El endpoint requiere los datos de la cabecera de la peticion para identificar la localizacion de la peticion, a tra vez de la cual obtiene los datos climaticos actuales de la misma.
+El endpoint requiere los datos de la cabecera de la peticion para identificar la localizacion, a tra vez de la cual obtiene los datos climaticos actuales de la misma.
 
 * #### /v1/current/[:city]
 
-el edpoint admite un parametro opcional que utiliza para identificar una localizacion y la informacion climatica actual de la misma, si el parametro ingresado no coincide con ninguna ciudad de la base de datos, este respondera con un valor de status 404 y el mensaje de "City not found".
+El edpoint admite un parametro opcional que utiliza para identificar una localizacion y la informacion climatica actual de la misma, si el parametro ingresado no coincide con ninguna ciudad de la base de datos, este respondera con un valor de status 404 y el mensaje de "City not found".
 
 * #### /v1/forecast 
 
@@ -79,7 +80,7 @@ Este edpoint requiere los datos de cabecera de la peticion, para obtener la dire
 
 * #### host/v1/forecast/[:city]
 
-el edpoint admite un parametro opcional que utiliza para identificar una localizacion y con ella devuelve un json con el nombre de la ciudad y el pronostico extendido a 5 dias. Si el parametro ingresado no coincide con ninguna ciudad de la base de datos, este respondera con un valor de status 404 y el mensaje de "City not found".
+El edpoint admite un parametro opcional que utiliza para identificar una localizacion y con ella devuelve un json con el nombre de la ciudad y el pronostico extendido a 5 dias. Si el parametro ingresado no coincide con ninguna ciudad de la base de datos, este respondera con un valor de status 404 y el mensaje de "City not found".
 
 ## Importante
 
